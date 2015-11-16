@@ -1,28 +1,18 @@
-== README
+=== README- WebGL RUPP Project 2015
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Ruby Version: 2.2.3
+* Rails Version: 4.2.4
+* Database: Postgresql 9.4.5
 
-Things you may want to cover:
+=== Project Description
 
-* Ruby version
+That program can allow user to choose what type of equation they want to
+plot and enter the relevant parameters’ value. In case, they choose to draw
+sphere the scene have to be switched to 3D mode. If user choose other equation
+beside sphere, it will be drawn in 2D mode.
 
-* System dependencies
+=== Project WebGL Topic: Plot graph and equation with WebGL
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+1. Line Equation
+2. Conic Section: Circle, Ellipse, Parabola and Hyperbola
+3. Sphere
