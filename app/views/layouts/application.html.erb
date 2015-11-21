@@ -8,7 +8,16 @@
 </head>
 <body>
 
-<%= yield %>
+<%= render 'header' %>
+<div class="ui fluid container" style="padding-top:60px;">
+  <div class="ui internally celled grid">
+    <div class="row">
+      <div class="ui wide column">
+        <%= yield %>
+      </div>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>
