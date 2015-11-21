@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'webgl_academy/index'
+
+  get 'plot_graph/index'
+
   root 'dashboard#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
