@@ -1,0 +1,2 @@
+module WebglAcademyHelper
+end

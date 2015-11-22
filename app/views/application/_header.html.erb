@@ -5,31 +5,31 @@
   <div class="ui simple dropdown icon item">
     <span class="text"><i class="fa fa-bars icon"></i>Plot Graph</span>
     <div class="menu">
-      <%= link_to '#', class: 'item' do %>
+      <%= link_to line_equation_path, class: 'item' do %>
         <span class="text"><i class="red fa fa-line-chart icon"></i>Line Equation</span>
       <% end %>
       <div class="divider"></div>
       <div class="header">Iconic Section</div>
       
-      <%= link_to '#', class: 'item' do %>
+      <%= link_to circle_path, class: 'item' do %>
         <span class="text"><i class="blue fa fa-circle-thin icon"></i>Circle</span>
       <% end %>
 
-      <%= link_to '#', class: 'item' do %>
+      <%= link_to ellipse_path, class: 'item' do %>
         <span class="text"><i class="green fa fa-lemon-o icon"></i>Ellipse</span>
       <% end %>
 
-      <%= link_to '#', class: 'item' do %>
+      <%= link_to parabola_path, class: 'item' do %>
         <span class="text"><i class="orange fa fa-moon-o icon"></i>Parabola</span>
       <% end %>
 
-      <%= link_to '#', class: 'item' do %>
+      <%= link_to hyperbola_path, class: 'item' do %>
         <span class="text"><i class="fa fa-connectdevelop icon"></i>Hyperbola</span>
       <% end %>
       
       <div class="divider"></div>
       <div class="header">3D Mode</div>
-      <%= link_to '#', class: 'item' do %>
+      <%= link_to sphere_path, class: 'item' do %>
         <span class="text"><i class="fa fa-dot-circle-o icon"></i>Sphere</span>
       <% end %>
     </div>
@@ -38,16 +38,20 @@
   <div class="ui simple dropdown icon item">
     <span class="text"><i class="fa fa-crop icon"></i>WebGL Academy</span>
     <div class="menu">
-      <%= link_to '#', class: 'item' do %>
+      <%= link_to triangle_2d_path, class: 'item' do %>
         <span class="text">2D Colored Triangle</span>
       <% end %>
       
-      <%= link_to '#', class: 'item' do %>
+      <%= link_to triangle_3d_path, class: 'item' do %>
         <span class="text">3D Colored Triangle</span>
       <% end %>
 
-      <%= link_to '#', class: 'item' do %>
-        <span class="text">Rotating Mouse Event</span>
+      <%= link_to rotating_cube_path, class: 'item' do %>
+        <span class="text">Rotating Cube</span>
+      <% end %>
+
+      <%= link_to cube_mouse_event_path, class: 'item' do %>
+        <span class="text">Cube Mouse Event</span>
       <% end %>
 
       <div class="item">
@@ -65,7 +69,11 @@
     </div>
   </div>
 
-  <%= link_to '#', class: 'ui item', title:'Questions' do %>
+  <%= link_to '#', class: 'ui item', title:'Slides Presentation' do %>
+      <span class="text"><i class="fa fa-laptop icon"></i></span>
+  <% end %>
+
+  <%= link_to questions_path, class: 'ui item', title:'Questions' do %>
       <span class="text"><i class="fa fa-question-circle icon"></i></span>
   <% end %>
 
