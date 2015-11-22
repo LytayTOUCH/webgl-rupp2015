@@ -5,6 +5,36 @@ Rails.application.routes.draw do
 
   root 'dashboard#index'
 
+  scope 'plot_graphs' do
+    get '/' => 'plot_graph#index'
+    get 'line_equation' => 'plot_graph#line_equation'
+    get 'circle' => 'plot_graph#circle'
+    get 'ellipse' => 'plot_graph#ellipse'
+    get 'parabola' => 'plot_graph#parabola'
+    get 'hyperbola' => 'plot_graph#hyperbola'
+    get 'sphere' => 'plot_graph#sphere'
+  end
+  get 'questions' => 'plot_graph#questions'
+
+  get 'webgl' => 'dashboard#webgl'
+  get 'triangle' => 'dashboard#triangle'
+  get 'transformation_matrix' => 'dashboard#transformation_matrix'
+  get 'square_triangle' => 'dashboard#square_triangle'
+  get 'line' => 'dashboard#line'
+  get 'tuts_one' => 'dashboard#tuts_one'
+  get 'cube_axis' => 'dashboard#cube_axis'
+  get 'canvas_webgl' => 'dashboard#canvas_webgl'
+
+  scope 'webgl/academy/2d' do
+    get 'triangle_2d' => 'webgl_academy#colored_triangle_2d'
+  end
+
+  scope 'webgl/academy/3d' do
+    get 'triangle_3d' => 'webgl_academy#colored_triangle_3d'
+    get 'rotating_cube' => 'webgl_academy#rotating_cube'
+    get 'cube_mouse_event' => 'webgl_academy#cube_mouse_event'
+  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
