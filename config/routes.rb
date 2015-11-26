@@ -1,12 +1,11 @@
 Rails.application.routes.draw do
-  get 'webgl_academy/index'
 
   get 'plot_graph/index'
 
   root 'dashboard#index'
 
-  scope 'plot_graphs' do
-    get '/' => 'plot_graph#index'
+  scope 'plot/graphs' do
+    get '/index' => 'plot_graph#index'
     get 'line_equation' => 'plot_graph#line_equation'
     get 'circle' => 'plot_graph#circle'
     get 'ellipse' => 'plot_graph#ellipse'
@@ -14,8 +13,8 @@ Rails.application.routes.draw do
     get 'hyperbola' => 'plot_graph#hyperbola'
     get 'sphere' => 'plot_graph#sphere'
   end
-  get 'questions' => 'plot_graph#questions'
 
+  get 'questions' => 'plot_graph#questions'
   get 'webgl' => 'dashboard#webgl'
   get 'triangle' => 'dashboard#triangle'
   get 'transformation_matrix' => 'dashboard#transformation_matrix'
@@ -25,6 +24,7 @@ Rails.application.routes.draw do
   get 'cube_axis' => 'dashboard#cube_axis'
   get 'canvas_webgl' => 'dashboard#canvas_webgl'
 
+  get 'webgl_academy/index'
   scope 'webgl/academy/2d' do
     get 'triangle_2d' => 'webgl_academy#colored_triangle_2d'
   end
@@ -33,6 +33,11 @@ Rails.application.routes.draw do
     get 'triangle_3d' => 'webgl_academy#colored_triangle_3d'
     get 'rotating_cube' => 'webgl_academy#rotating_cube'
     get 'cube_mouse_event' => 'webgl_academy#cube_mouse_event'
+  end
+
+  scope 'webgl' do
+    get '/sandbox' => 'webgl_sandbox#index'
+    get '/grids' => 'webgl_sandbox#grids'
   end
 
   # The priority is based upon order of creation: first created -> highest priority.

@@ -57,6 +57,17 @@
     </div>
   </div>
 
+  <div class="ui simple dropdown icon item">
+    <%= link_to sandbox_path do %>
+      <span class="text"><i class="fa fa-archive icon"></i>WebGL Sandbox</span>
+    <% end %>
+    <div class="menu">
+      <%= link_to grids_path, class: 'item' do %>
+        <span class="text"><i class="blue fa fa-bar-chart icon"></i>Grids</span>
+      <% end %>
+    </div>
+  </div>
+
   <%= link_to '#', class: 'ui item', title:'Slides Presentation' do %>
       <span class="text"><i class="fa fa-laptop icon"></i></span>
   <% end %>
