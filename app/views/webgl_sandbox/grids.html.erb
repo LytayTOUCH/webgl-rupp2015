@@ -15,30 +15,30 @@
 
         <!-- <div class="ui header center aligned segment">Y = a X + b</div> -->
 
-<!--         <div class="ui form">
+        <div class="ui form">
           
-          <div class="fields">
+          <!-- <div class="fields">
             <div class="sixteen wide inline field">
               <label><h3>Inital Axis Point </h3></label>
               <input type="text" placeholder="Axis Point">
             </div>
-          </div>
+          </div> -->
 
           <div class="fields">
             <div class="sixteen wide inline field">
               <label><h3>Value a = </h3></label>
-              <input type="text" placeholder="Value">
+              <input type="text" placeholder="Value" id="value-a" onkeypress="return isNumberKey(event)">
             </div>
           </div>
 
           <div class="fields">
             <div class="sixteen wide inline field">
               <label><h3>Value b = </h3></label>
-              <input type="text" placeholder="Value">
+              <input type="text" placeholder="Value" id="value-b" onkeypress="return isNumberKey(event)">
             </div>
           </div>
 
-        </div> -->
+        </div>
       </div>
 
       <button class="mini blue ui button" id="tgr-draw-grid">Draw Graph</button>
@@ -48,8 +48,7 @@
     <div class="ui ten wide column">
       <h3 class="ui text header">Graph</h3>
       <div class="ui segment">
-        <!-- <canvas id="canvasId" style ="width: 100%; height: 100%; background-color: #000090;"></canvas> -->
-        <div id='gird-axis'></div>
+        <canvas id="grid-axis" style ="width: 100%; height: 100%; background-color: #000090;"></canvas>
       </div>
     </div>
 

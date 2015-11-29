@@ -6,17 +6,18 @@ function graphstraightlineMain() {
     s += '<div style="position:relative; width:' + w + 'px; height:' + h + 'px; border-radius: 10px; margin:auto; display:block;  background-color: #e0f8ff;">';
     s += '<canvas id="canvasId" width="' + w + '" height="' + h + '" style="z-index:1;"></canvas>';
     s += '<div id="title" style="font: 20px arial; font-weight: bold; color: black; position:absolute; top:5px; left:0; width:250px; text-align:left; text-align: center;"></div>';
-    s += '<input type="range" id="r1"  value="1" min="-4" max="4" step=".1" style="z-index:2; position:absolute; top:90px; left:10px; width:200px; height:17px; border: none; "  oninput="showVal(1,this.value)" onchange="showVal(1,this.value)" />';
-    s += '<input type="range" id="r2" value="2" min="-4" max="4" step=".1" style="z-index:2; position:absolute; top:155px; left:10px; width:200px; height:17px; border: none; " oninput="showVal(2,this.value)" onchange="showVal(2,this.value)" />';
+    s += '<input type="range" id="r1"  value="1" min="-40" max="40" step=".1" style="z-index:2; position:absolute; top:90px; left:10px; width:200px; height:17px; border: none; "  oninput="showVal(1,this.value)" onchange="showVal(1,this.value)" />';
+    s += '<input type="range" id="r2" value="2" min="-40" max="40" step=".1" style="z-index:2; position:absolute; top:155px; left:10px; width:200px; height:17px; border: none; " oninput="showVal(2,this.value)" onchange="showVal(2,this.value)" />';
     s += '<div id="val1" style=" position:absolute; top:55px; left:20px; border: none; padding:5px; background-color: #ffeeee; font: bold 20px Arial; color: orange; z-index:3;">9</div>';
     s += '<div id="val2" style=" position:absolute; top:120px; left:20px; border: none; padding:5px; background-color: #eeeeff; font: bold 20px Arial; color:blue; z-index:3; ">3</div>';
     s += '<div id="equn" style="font: bold 28px arial; bold; color: darkblue; position:absolute; top:210px; left:10px; width:220px;  text-align: center; background-color: #89FFDE; padding:5px;"></div>';
     s += '<div id="copyrt" style="position:absolute; left:3px; bottom:3px; font: 10px Arial; font-weight: bold; color: blue; ">&copy; 2015 MathsIsFun.com  v' + this.version + '</div>';
     s += '</div>';
-    // grid = document.getElementById('grid-axis');
-    // grid.write(s);
+    // grid = document.getElementById('draw-grid');
 
     el = document.write(s);
+
+    // el = grid.appendChild(s)
     // element;
     el = document.getElementById('canvasId');
     ratio = 2;
@@ -30,7 +31,7 @@ function graphstraightlineMain() {
     graphWd = 300;
     graphTp = 10;
     graphHt = 300;
-    coords = new Coords(graphLt, graphTp, graphWd, graphHt, -9, -9, 9, 9, false);
+    coords = new Coords(graphLt, graphTp, graphWd, graphHt, -9, -9, 9, 9, true);
     showVal();
 }
 
@@ -65,7 +66,7 @@ function drawLine(m, b) {
     graph.drawGraph();
     g.beginPath();
     g.lineWidth = 2;
-    g.strokeStyle = "#0000ff";
+    g.strokeStyle = "#00ff00";
     for (i = 0; i < graphWd; i++) {
         var xVal = coords.toXVal(i);
         var yVal = m * xVal + b;

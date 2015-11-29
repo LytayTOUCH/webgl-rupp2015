@@ -5,5 +5,8 @@ $(document).on 'ready page:load', ->
   $('#tgr-draw-grid').click ->
     # console.log($('canvas')[0])
     # graphstraightlineMain($('canvas')[0])
-    graphstraightlineMain()
+    # graphstraightlineMain()
     # alert('Draw Grid');
+    drawgrid()
+  $('#tgr-draw-grid-test').click ->
+    graphstraightlineMain()
