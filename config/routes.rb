@@ -38,6 +38,8 @@ Rails.application.routes.draw do
   scope 'webgl' do
     get '/sandbox' => 'webgl_sandbox#index'
     get '/grids' => 'webgl_sandbox#grids'
+    get '/fundamental' => 'webgl_sandbox#fundamental'
+
   end
 
   # The priority is based upon order of creation: first created -> highest priority.

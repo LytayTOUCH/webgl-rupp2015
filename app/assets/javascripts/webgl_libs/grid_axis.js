@@ -15,8 +15,8 @@ function drawgrid(){
   canvas=document.getElementById('grid-axis');
   // console.log(canvas);
   
-  w = 800;
-  h = 600;
+  w = 570;
+  h = 470;
 
   ratio = 2;
   canvas.width = w * ratio;

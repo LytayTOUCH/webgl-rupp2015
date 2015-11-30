@@ -3,4 +3,6 @@ class WebglSandboxController < ApplicationController
   end
   def grids
   end
+  def fundamental
+  end
 end
