@@ -5,4 +5,6 @@ class WebglSandboxController < ApplicationController
   end
   def fundamental
   end
+  def white_triangle
+  end
 end

@@ -39,6 +39,7 @@ Rails.application.routes.draw do
     get '/sandbox' => 'webgl_sandbox#index'
     get '/grids' => 'webgl_sandbox#grids'
     get '/fundamental' => 'webgl_sandbox#fundamental'
+    get '/white_triangle' => 'webgl_sandbox#white_triangle'
 
   end
 

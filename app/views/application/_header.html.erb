@@ -67,11 +67,19 @@
       <% end %>
 
       <%= link_to fundamental_path, class: 'item' do %>
-        <span class="text"><i class="blue fa fa-bar-chart icon"></i>WebGL Fundamental</span>
+        <span class="text"><i class="blue fa fa-external-link icon"></i>WebGL Fundamental</span>
+      <% end %>
+
+      <%= link_to white_triangle_path, class: 'item' do %>
+        <span class="text"><i class="blue fa fa-exclamation-triangle icon"></i>White Triangle</span>
       <% end %>
     </div>
   </div>
 
+  <%= link_to '#', class: 'ui item', title:'Slides Presentation' do %>
+      <span class="text"><i class="fa fa-tasks icon"></i>3.js</span>
+  <% end %>
+  
   <%= link_to '#', class: 'ui item', title:'Slides Presentation' do %>
       <span class="text"><i class="fa fa-laptop icon"></i></span>
   <% end %>
